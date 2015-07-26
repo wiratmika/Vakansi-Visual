@@ -1,0 +1,73 @@
+// Source: http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+figure {
+	margin: 0;
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	text-align: center;
+
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.3s;
+
+	h3 {
+		text-align: center;
+		margin: 0;
+		color: $white;
+		margin-top: 50px;
+
+		@media #{$small-only} {
+			margin-top: 20px;
+		}
+	}
+
+	span {
+		display: block;
+	}
+
+	a {
+		padding: 5px 20px;
+		border-radius: 2px;
+		display: inline-block;
+		color: $white;
+		font-size: rem-calc(17);
+
+		margin-top: 30px;
+	}
+}
+
+.no-touch figure:hover figcaption, figure.hover figcaption {
+	opacity: 0.85;
+}
+
+// Custom Color
+.original {
+	figcaption {
+		color: $original;
+	}
+
+	a {
+		background: $original;
+	}
+}
+
+.commercial {
+	figcaption {
+		color: $commercial;
+	}
+
+	a {
+		background: $commercial;
+	}
+}

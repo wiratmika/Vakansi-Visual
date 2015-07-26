@@ -1,0 +1,29 @@
+/* TEAM */
+	Skipper, designer, developer: Wiratmika
+	Contact: wiratmika [at] gmail [dot] com
+	Twitter: @wiratmika
+	From: Jakarta, Indonesia
+
+/* SITE */
+	Last update: 2015/07/26
+	Language: English
+	Doctype: HTML5
+	Standards: HTML5, CSS3, ECMAScript 5.1
+	Editor: Sublime Text 3
+	Tools/Software/Framework/Libraries/Components (in alphabetical order):
+		Adobe Illustrator
+		Adobe Photoshop
+		Animatron
+		Foundation 5
+		generator-gulp-webapp
+		Git
+		HTML5 Boilerplate
+		Isotope
+		jQuery
+		jquery-smooth-scroll
+		libsass
+		Modernizr
+		Normalize.css
+		parallax.js
+		Sublime Text 3
+		Yeoman

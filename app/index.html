@@ -1,0 +1,459 @@
+<?php require_once 'includes/data.php' ?>
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A creative label based in Jakarta who loves to tell story, your story!">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vakansi Visual</title>
+
+	<link rel="stylesheet" href="styles/dataurl.css">
+	<script src="scripts/pace.min.js"></script>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+
+	<link rel="author" href="humans.txt">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@VakansiVisual">
+	<meta name="twitter:title" content="Vakansi Visual">
+	<meta name="twitter:description" content="A creative label based in Jakarta who loves to tell story, your story!">
+	<meta name="twitter:creator" content="@VakansiVisual">
+	<meta name="twitter:image" content="//vakansivisual.com/apple-touch-icon-precomposed.png">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Vakansi Visual">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="//vakansivisual.com">
+	<meta property="og:image" content="//vakansivisual.com/apple-touch-icon-precomposed.png">
+	<meta property="og:description" content="A creative label based in Jakarta who loves to tell story, your story!">
+	<meta property="og:site_name" content="Vakansi Visual">
+	<meta property="fb:admins" content="vakansivisual">
+</head>
+<body>
+	<div id="crew-info" class="reveal-modal" data-reveal aria-labelledby="crew-info" aria-hidden="true" role="dialog"></div>
+
+	<?php if (isset($_GET['sent'])): ?>
+		<div id="send-message-success" data-alert class="alert-box" tabindex="0" aria-live="assertive" role="dialogalert">
+			Thanks, we'll keep in touch with you!
+			<button href="#" tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+		</div>
+	<?php endif; ?>
+
+
+	<!--[if lt IE 10]>
+	  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	<header class="contain-to-grid fixed" id="navbar" data-magellan-expedition>
+		<nav class="top-bar" data-topbar data-options="scrolltop:false" role="navigation">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="//vakansivisual.com">VAKANSI VISUAL</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="right">
+					<li data-magellan-arrival="what"><a href="#what">WHAT WE DO</a></li>
+					<li data-magellan-arrival="who"><a href="#who">WHO WE ARE</a></li>
+					<li data-magellan-arrival="works"><a href="#works">OUR WORKS</a></li>
+					<li data-magellan-arrival="how"><a href="#how">HOW IT WORKS</a></li>
+					<li data-magellan-arrival="contact"><a href="#contact">SAY HI</a></li>
+				</ul>
+			</section>
+		</nav>
+	</header>
+
+	<section id="landing" data-parallax="scroll" data-image-src="images/cover1.jpg">
+		<div class="row">
+			<div class="small-12 medium-3 medium-push-9 columns">
+				<img src="images/logo.svg" alt="VAKANSI VISUAL">
+			</div>
+
+			<div class="small-12 medium-9 medium-pull-3 columns">
+				<h2>Hello,</h2>
+				<h3>We are here to tell your story</h3>
+			</div>
+		</div>
+
+		<ul id="rainbow">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</section>
+
+	<section id="what">
+		<div class="row">
+			<div class="small-12 columns">
+				<h2 data-magellan-destination="what">Hello! We are a creative label based in Jakarta who loves to tell story, your story!</h2>
+				<a name="what"></a>
+
+				<p>VAKANSI VISUAL is a Jakarta based creative label committed to accommodate clients’ need to tell their stories through creative, personalized, and high quality video. A brainchild of Adhyatmika and Annisa Amalia, VAKANSI VISUAL is a collaborative production within creative professionals from different fields of media background.</p>
+
+				<p>We work as an integrated studio. Our mission is to provide our clients with one stop service. Starting from the creative conception, to the finishing touch, and execute it with good story and tasteful design.</p>
+
+				<blockquote>Personalization is our key. We aim to engage consumer’s personal experience.</blockquote>
+
+				<p>VAKANSI VISUAL started with the foundation that art and business must walk hand in hand. We have our Original Content where we produced <a href="//youtu.be/NcZi6dk-h9U" target="_blank">short films</a>, <a href="//youtu.be/_pVZBhp6SSY" target="_blank">music videos</a>, and <a href="//youtu.be/1e1_iPZykKE" target="_blank">feature films</a>. We also created a webseries, <a href="//youtu.be/ds1kLu6pm34" target="_blank">The Influencers</a>, that highlights wonderful people who work in creative industry in Indonesia.</p>
+
+				<p>In our Commercial &amp; Services division, we offer services such as (and not limited to) company profile, TV commercial, brand video, and sponsored webseries that blend idealistic nature of filmmaking and strategic thinking of business.</p>
+
+				<p>With the spirit of creativity and professionalism, we are here to understand your perspective, your excitement for your product, your passionate movement for a cause, or your celebration for your business.</p>
+
+				<p>We will ensure that each frame reflects your authentic vision, your essence, your story.</p>
+
+				<blockquote>We are here to tell personal stories that engage the audience with the product, which makes it relatable and memorable.</blockquote>
+			</div>
+		</div>
+	</section>
+
+	<div id="intermezzo" data-parallax="scroll" data-image-src="images/cover2.jpg"></div>
+
+	<section id="who">
+		<div class="row">
+			<div class="small-12 columns">
+				<h2 data-magellan-destination="who">Who We Are</h2>
+				<a name="who"></a>
+
+				<p>It all began in high school. No, it's not a high school romance. Mika started a film club in his high school where Abazh soon joined in. They met and started to work together.</p>
+
+				<p>Sometime around 2013 they decided to team up and founded VAKANSI VISUAL. From there, the story continues...</p>
+
+				<div class="row">
+					<div class="small-12 medium-6 columns boss">
+						<img src="images/crews/adhyatmika.jpg" alt="Adhyatmika">
+						<h3>ADHYATMIKA</h3>
+						<p>Previously known as <a href="//youtu.be/uwerlKREn3w" target="_blank">the guy who met Hillary Clinton</a>, Mika loves cute girl with glasses and storytelling, perhaps because his dad used to tell him Wayang bedtime story or he just bored with his own life. An award-winning director, Mika serves as the Head of Creative for VAKANSI VISUAL and here to brew ideas for your story.</p>
+					</div>
+
+					<div class="small-12 medium-6 columns boss">
+						<img src="images/crews/abazh.jpg" alt="Annisa Amalia">
+						<h3>ANNISA AMALIA</h3>
+						<p>Born with the name Annisa, but publicly known as Abazh (do not ask why), her world revolves around being a full-time video producer and a part-time road manager. Music and filmmaking are where she finds the perfect balance of working and having fun. She is an avid tea drinker, a solo traveler, and now serves as the Head of Production for VAKANSI VISUAL.</p>
+					</div>
+				</div>
+
+				<p>Along the way, we worked with bands of talented professionals.</p>
+
+				<div class="row">
+					<?php foreach ($crews as $crew) : ?>
+						<div class="small-12 medium-4 columns<?php if ($crew === end($crews)) echo ' end' ?>">
+							<div class="crew">
+								<img src="images/crews/<?= $crew['image'] ?>.jpg" alt="<?= $crew['name'] ?>">
+								<h3><?= strtoupper($crew['name']) ?></h3>
+								<p><?= $crew['description'] ?></p>
+								<a href="crew.php?id=<?= $crew['image'] ?>" data-reveal-id="crew-info" data-reveal-ajax="true" class="more">Read more...</a>
+							</div>
+						</div>
+					<?php endforeach ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="works">
+		<div class="row">
+			<div class="small-12 columns">
+				<h2 data-magellan-destination="works">Our Works</h2>
+				<a name="works"></a>
+
+				<ul class="tabs" data-tab role="tablist">
+					<li class="tab-title active" role="presentational">
+						<a href="#original" id="tab1" role="tab" tabindex="0" aria-selected="true">ORIGINAL CONTENTS</a>
+					</li>
+					<li class="tab-title" role="presentational">
+						<a href="#commercial" id="tab2" role="tab" tabindex="0" aria-selected="false">COMMERCIAL &amp; SERVICES</a>
+					</li>
+					<li class="tab-title" role="presentational">
+						<a href="#client" id="tab3" role="tab" tabindex="0" aria-selected="false">OUR CLIENTS</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="tabs-content">
+			<section role="tabpanel" aria-hidden="false" class="content active">
+				<ul class="isotope small-block-grid-1 medium-block-grid-3">
+					<?php foreach ($originals as $original) : ?>
+						<li class="work original">
+							<figure>
+								<img src="images/works/original-<?= $original['image'] ?>.jpg" alt="<?= $original['title'] ?>">
+								<figcaption>
+									<h3><?= strtoupper($original['title']) ?></h3>
+									<span><?= $original['description'] ?></span>
+									<a href="<?= $original['link'] ?>" target="_blank">View</a>
+								</figcaption>
+							</figure>
+						</li>
+					<?php endforeach ?>
+
+					<?php foreach ($commercials as $commercial) : ?>
+						<li class="work commercial">
+							<figure>
+								<img src="images/works/commercial-<?= $commercial['image'] ?>.jpg" alt="<?= $commercial['title'] ?>">
+								<figcaption>
+									<h3><?= strtoupper($commercial['title']) ?></h3>
+									<span>Client: <?= $commercial['client'] ?></span>
+									<span><?= $commercial['description'] ?></span>
+									<?php if (isset($commercial['link'])): ?>
+										<a href="<?= $commercial['link'] ?>" target="_blank">View</a>
+									<?php endif; ?>
+								</figcaption>
+							</figure>
+						</li>
+					<?php endforeach ?>
+				</ul>
+
+				<div class="isotope row">
+					<?php foreach ($clients as $client) : ?>
+						<div class="work small-6 medium-3 columns client opacity-0">
+							<a href="<?= $client['link'] ?>" target="_blank">
+								<img src="images/works/client-<?= $client['image'] ?>.jpg" alt="<?= $client['title'] ?>">
+							</a>
+						</div>
+					<?php endforeach ?>
+
+					<div class="work small-6 medium-3 columns end client opacity-0">
+						<a class="inline-anchor" href="#contact">
+							<img src="images/works/client-you.jpg" alt="Put Your Logo Here">
+						</a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+
+	<section id="how">
+		<div class="row">
+			<div class="small-12 columns">
+				<h2 data-magellan-destination="how">How It Works</h2>
+				<a name="how"></a>
+
+				<div id="line"></div>
+
+				<div class="row hiw-step">
+					<div class="small-12 medium-6 columns">
+						<img src="images/hiw-1.svg" alt="Tell Us What You Got In Mind">
+					</div>
+
+					<div class="small-12 medium-6 columns">
+						<div>
+							<h3>Tell us what you got in mind,</h3>
+							<p>Your product, and your vision. Send an email, or even better, share your reference for us to see.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hiw-step">
+					<div class="small-12 medium-6 columns">
+						<img src="images/hiw-2.svg" alt="Next, We Meet Up">
+					</div>
+
+					<div class="small-12 medium-6 columns">
+						<h3>Next, we meet up!</h3>
+						<p>This is the process where we blend ideas, discuss concept possibilities, and calculate the budget.</p>
+					</div>
+				</div>
+
+				<div class="row hiw-step">
+					<div class="small-12 medium-6 columns">
+						<img src="images/hiw-3.svg" alt="We Have Star-Based Pricing System">
+					</div>
+
+					<div class="small-12 medium-6 columns">
+						<h3>We have star-based pricing system</h3>
+						<p>Each will cater to your resource.</p>
+					</div>
+				</div>
+
+				<div class="row hiw-step">
+					<div class="small-12 medium-6 columns">
+						<img src="images/hiw-4.svg" alt="Who Will Be Involved In The Production">
+					</div>
+
+					<div class="small-12 medium-6 columns">
+						<h3>Who will be involved in the production?</h3>
+						<p><a class="inline-anchor" href="#who">Check out our team</a>, learn their style and traits, and let us know who’s most suitable for your needs.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-12 columns">
+						<img id="camera" src="images/hiw-5.svg" alt="The Shooting Begins">
+					</div>
+
+					<div class="small-12 columns">
+						<h3 class="text-center">The shooting begins!</h3>
+						<p class="text-center">And within a month (depends on how many revision needed *cough*) the video is ready to be delivered to your door. It’s that simple!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="small-12 columns">
+				<h2>Pricing System</h2>
+				<p>The price of a video varies, depending on creative concepts and your resources. Generally speaking, our clients fall into three categories. Click to see the options available to you:</p>
+
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<div id="star1" anm-rib-color="#ffffff"></div>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<div id="star2" anm-rib-color="#ffffff"></div>
+					</div>
+					<div class="small-12 columns">
+						<div id="star3" anm-rib-color="#ffffff"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content" id="contact">
+		<div class="row">
+			<div class="small-12 columns">
+				<h2 data-magellan-destination="contact">Say Hi to Us</h2>
+				<a name="contact"></a>
+
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<h3>A simple hi would do. We'll get back to you soon!</h3>
+
+						<form action="contact.php" method="POST" data-abide>
+							<div class="row">
+								<div class="small-12 columns">
+									<label>Name
+										<input type="text" name="name" placeholder="Your Name" required pattern="alpha">
+									</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="small-12 columns">
+									<label>Email
+										<input type="email" name="email" placeholder="Your Email" required pattern="email">
+									</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="small-12 columns">
+									<label>Contact Number
+										<input type="text" name="phone" placeholder="Contact Number" required>
+									</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="small-12 columns">
+									<label>Type of Project
+										<input type="text" name="project" placeholder="Your Desired Project" required>
+									</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="small-12 columns">
+									<label>Your Ideas
+										<textarea name="ideas" placeholder="Tell Us Your Ideas" required></textarea>
+									</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="small-4 small-offset-4 columns">
+									<button type="submit" class="button radius large">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="small-12 medium-6 columns">
+						<h4>PT VAKANSI VISUAL MEDIA</h4>
+						<p>
+							We are located at:<br>
+							Sovereign Plaza Building 21st Floor<br>
+							Jl. T.B. Simatupang Kav. 36<br>
+							Jakarta 12430, Indonesia
+						</p>
+						<p>Call us at +62 878 7162 0850 to drop in and say hello!</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15863.105886844152!2d106.802546!3d-6.293081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb4b55990709e7aff!2sSovereign+Indonesia!5e0!3m2!1sen!2s!4v1414414170945"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="row">
+			<div class="small-12 columns">
+				<ul>
+					<li><a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#118;&#097;&#107;&#097;&#110;&#115;&#105;&#118;&#105;&#115;&#117;&#097;&#108;&#046;&#099;&#111;&#109;" target="_blank">EMAIL</a></li>
+					<li><a href="//fb.com/VakansiVisual" target="_blank">FACEBOOK</a></li>
+					<li><a href="//twitter.com/VakansiVisual" target="_blank">TWITTER</a></li>
+					<li><a href="//youtube.com/VakansiVisual" target="_blank">YOUTUBE</a></li>
+					<li><a href="//vimeo.com/VakansiVisual" target="_blank">VIMEO</a></li>
+				</ul>
+
+			</div>
+			<div class="small-12 columns">
+				<p>&copy; 2015 PT Vakansi Visual Media</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-54482429-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/fastclick/lib/fastclick.js"></script>
+	<script src="/bower_components/jquery.cookie/jquery.cookie.js"></script>
+	<script src="/bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="/bower_components/foundation/js/foundation.js"></script>
+	<script src="/bower_components/parallax.js/parallax.min.js"></script>
+	<script src="/bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
+	<script src="/bower_components/headroom.js/dist/headroom.js"></script>
+	<script src="/bower_components/headroom.js/dist/jQuery.headroom.js"></script>
+	<script src="/bower_components/headroom.js/dist/angular.headroom.js"></script>
+	<script src="/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+	<script src="//player.animatron.com/latest/bundle/animatron.min.js"></script>
+		<!-- build:js scripts/main.js -->
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
+</body>
+</html>
