@@ -1,0 +1,24 @@
+{
+  "name": "vakansi-visual",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "foundation": "~5.5.2",
+    "parallax.js": "~1.3.2",
+    "jquery-smooth-scroll": "~1.5.5",
+    "headroom.js": "~0.7.0",
+    "player": "~1.1.0",
+    "isotope": "~2.2.1"
+  },
+  "overrides": {
+    "player": {
+      "main": [
+        "vendor/matrix.js",
+        "anm.js",
+        "engine/dom-engine.js",
+        "player.js"
+      ]
+    }
+  }
+}

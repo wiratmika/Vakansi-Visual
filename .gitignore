@@ -11,8 +11,6 @@ test/bower_components
 .jshintrc
 .tmp
 .yo-rc.jsons
-bower.json
-gulpfile.js
 test
 
 app/includes/htmlpurifier
