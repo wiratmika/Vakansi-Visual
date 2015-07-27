@@ -1,7 +1,3 @@
 User-agent: *
-Disallow: /styles/
-Disallow: /images/
-Disallow: /scripts/
-Disallow: /fonts/
 Disallow: /includes/
 Disallow: /contact.php
