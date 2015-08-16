@@ -200,7 +200,7 @@
 					<?php foreach ($originals as $original) : ?>
 						<li class="work original">
 							<figure>
-								<img src="images/works/original-<?= $original['image'] ?>.jpg" alt="<?= $original['title'] ?>">
+								<img class="grow" src="images/works/original-<?= $original['image'] ?>.jpg" alt="<?= $original['title'] ?>">
 								<figcaption>
 									<h3><?= strtoupper($original['title']) ?></h3>
 									<span><?= $original['description'] ?></span>
@@ -213,7 +213,7 @@
 					<?php foreach ($commercials as $commercial) : ?>
 						<li class="work commercial">
 							<figure>
-								<img src="images/works/commercial-<?= $commercial['image'] ?>.jpg" alt="<?= $commercial['title'] ?>">
+								<img class="grow" src="images/works/commercial-<?= $commercial['image'] ?>.jpg" alt="<?= $commercial['title'] ?>">
 								<figcaption>
 									<h3><?= strtoupper($commercial['title']) ?></h3>
 									<span>Client: <?= $commercial['client'] ?></span>
@@ -231,14 +231,14 @@
 					<?php foreach ($clients as $client) : ?>
 						<div class="work small-6 medium-3 columns client opacity-0">
 							<a href="<?= $client['link'] ?>" target="_blank">
-								<img src="images/works/client-<?= $client['image'] ?>.jpg" alt="<?= $client['title'] ?>">
+								<img class="grow" src="images/works/client-<?= $client['image'] ?>.jpg" alt="<?= $client['title'] ?>">
 							</a>
 						</div>
 					<?php endforeach ?>
 
 					<div class="work small-6 medium-3 columns end client opacity-0">
 						<a class="inline-anchor" href="#contact">
-							<img src="images/works/client-you.jpg" alt="Put Your Logo Here">
+							<img class="grow" src="images/works/client-you.jpg" alt="Put Your Logo Here">
 						</a>
 					</div>
 				</div>
@@ -454,6 +454,8 @@
 	<script src="//player.animatron.com/latest/bundle/animatron.min.js"></script>
 		<!-- build:js scripts/main.js -->
 		<script src="scripts/main.js"></script>
+		<script src="scripts/caption_hover_effects.js"></script>
+		<script src="scripts/animatron_loader.js"></script>
 		<!-- endbuild -->
 </body>
 </html>

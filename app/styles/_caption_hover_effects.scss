@@ -1,10 +1,20 @@
 // Source: http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 figure {
+	overflow: hidden;
 	margin: 0;
 	position: relative;
 
 	img {
 		width: 100%;
+	}
+
+	.grow {
+		transition: all .2s ease-in-out;
+	}
+
+	&:hover .grow {
+		transform: scale(1.1);
+		filter: blur(1px);
 	}
 }
 
@@ -47,7 +57,7 @@ figcaption {
 	}
 }
 
-.no-touch figure:hover figcaption, figure.hover figcaption {
+.no-touch figure:hover figcaption, figure.cs-hover figcaption {
 	opacity: 0.85;
 }
 
