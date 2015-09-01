@@ -32,6 +32,7 @@ figcaption {
 	transition: opacity 0.3s;
 
 	h3 {
+		transition: all 0.3s;
 		text-align: center;
 		margin: 0;
 		color: $white;
@@ -43,22 +44,32 @@ figcaption {
 	}
 
 	span {
+		transition: all 0.3s;
 		display: block;
 	}
 
 	a {
+		transition: all 0.3s;
 		padding: 5px 20px;
 		border-radius: 2px;
 		display: inline-block;
 		color: $white;
 		font-size: rem-calc(17);
 
-		margin-top: 30px;
+		margin-top: 35px;
 	}
 }
 
 .no-touch figure:hover figcaption, figure.cs-hover figcaption {
 	opacity: 0.85;
+
+	h3, span {
+		transform: translateY(7px);
+	}
+
+	a {
+		transform: translateY(-5px);
+	}
 }
 
 // Custom Color
