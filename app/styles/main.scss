@@ -5,10 +5,20 @@ $original: #42b4e6;
 $commercial: #7dbe31;
 $client: #ef4645;
 
-@import "normalize";
-@import "settings";
-@import "foundation";
-@import "caption_hover_effects";
+@import 'normalize';
+@import 'settings';
+@import 'foundation/components/grid';
+@import 'foundation/components/alert-boxes';
+@import 'foundation/components/block-grid';
+@import 'foundation/components/buttons';
+@import 'foundation/components/forms';
+@import 'foundation/components/magellan';
+@import 'foundation/components/reveal';
+@import 'foundation/components/tabs';
+@import 'foundation/components/top-bar';
+@import 'foundation/components/type';
+@import 'foundation/components/visibility';
+@import 'caption_hover_effects';
 
 .browserupgrade {
 	background: #ccc;
@@ -56,10 +66,131 @@ h2 {
 	}
 }
 
+// =================================
+// Preloader Loading Functionalities
+// https://ihatetomatoes.net/create-css3-spinning-preloader/
+// https://ihatetomatoes.net/create-custom-preloading-screen/
+// =================================
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+
+	border: 3px solid transparent;
+	border-top-color: #3498db !important;
+	border-radius: 50%;
+
+	z-index: 1001;
+	animation: spin 2s linear infinite;
+
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		border: 3px solid transparent;
+		border-radius: 50%;
+	}
+
+	&:before {
+		top: 5px;
+		left: 5px;
+		right: 5px;
+		bottom: 5px;
+		border-top-color: #e74c3c !important;
+		animation: spin 3s linear infinite;
+	}
+
+	&:after {
+		top: 15px;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+		border-top-color: #f9c922 !important;
+		animation: spin 1.5s linear infinite;
+	}
+}
+
+@keyframes spin {
+	0%   {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#loader-wrapper .loader-section {
+	position: fixed;
+	top: 0;
+	width: 51%;
+	height: 100%;
+	background: #222;
+	z-index: 1000;
+
+	&.section-left {
+		left: 0;
+	}
+
+	&.section-right {
+		right: 0;
+	}
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+	transform: translateX(-100%);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+	transform: translateX(100%);
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+	visibility: hidden;
+	transition: all 0.3s 1s ease-out;
+}
+
+.no-js #loader-wrapper {
+	display: none;
+}
+
+// Prevent scrolling while the page hasn't finished loading
+.no-scroll {
+	height: 100%;
+	overflow: hidden;
+}
+
+.no-js .no-scroll {
+	overflow: visible;
+}
+
 // ======
 // Header
 // ======
-header {
+header.contain-to-grid {
+	background: rgba(255, 255, 255, 0.95);
+	border-bottom: 3px solid rgb(250, 81, 0);
 	box-shadow: 0 0 3px 0 $iron;
 	display: none;
 	letter-spacing: 0.1em;
@@ -96,6 +227,12 @@ h1 {
 	background: transparent;
 	min-height: 100vh;
 	width: 100%;
+	z-index: 1003;
+	position: relative;
+
+	h2, h3 {
+		z-index: 5;
+	}
 
 	h2 {
 		font-size: rem-calc(100);

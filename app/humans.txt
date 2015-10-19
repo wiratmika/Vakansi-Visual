@@ -5,7 +5,7 @@
 	From: Jakarta, Indonesia
 
 /* SITE */
-	Last update: 2015/07/26
+	Last update: 2015/10/15
 	Language: English
 	Doctype: HTML5
 	Standards: HTML5, CSS3, ECMAScript 5.1
@@ -18,6 +18,8 @@
 		generator-gulp-webapp
 		Git
 		HTML5 Boilerplate
+		Headroom.js
+		imagesloaded
 		Isotope
 		jQuery
 		jquery-smooth-scroll
