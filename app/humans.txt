@@ -5,7 +5,6 @@
 	From: Jakarta, Indonesia
 
 /* SITE */
-	Last update: 2015/10/15
 	Language: English
 	Doctype: HTML5
 	Standards: HTML5, CSS3, ECMAScript 5.1
